@@ -5,6 +5,7 @@ import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+
 import {
   Card,
   CardContent,
@@ -19,7 +20,6 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-   
     <div className="flex items-center gap-6 md:gap-10 ">
       <Card className="bg-rose-600">
         <CardHeader className="h-1 justify-center">
@@ -48,6 +48,5 @@ export function MainNav({ items }: MainNavProps) {
         </nav>
       ) : null}
     </div>
-    
   )
 }
