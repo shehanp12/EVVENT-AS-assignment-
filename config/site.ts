@@ -10,6 +10,7 @@ export const siteConfig = {
       href: "/",
 
     },
+
     {
       title:"Explore",
       href:"/explore"
@@ -17,7 +18,11 @@ export const siteConfig = {
     {
       title:"About Evvent",
       href:"/about"
+
     }
+
+    
+
   ],
   links: {
     twitter: "https://twitter.com/shadcn",
