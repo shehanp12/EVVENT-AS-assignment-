@@ -1,11 +1,13 @@
 import Link from "next/link"
-
+import { BsChat, BsPlus } from "react-icons/bs"
+import { GrNotification } from "react-icons/gr"
+import { FcManager } from "react-icons/fc"
 import { siteConfig } from "@/config/site"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { BsPlus } from 'react-icons/bs';
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
@@ -22,29 +24,31 @@ export function SiteHeader() {
               rel="noreferrer"
             >
               <div className="flex flex-row">
-              <BsPlus/>
-              <div className="flex cursor-not-allowed items-center text-sm font-medium opacity-80">
-                Add Services
+                <BsPlus />
+                <div className="flex cursor-not-allowed items-center text-sm font-medium opacity-80">
+                  Add Services
+                </div>
               </div>
-              </div>
-             
+            </Link>
+            <div className="px-4"></div>
+
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="px-4"></div>
+              <BsChat />
             </Link>
             <Link
               href={siteConfig.links.twitter}
               target="_blank"
               rel="noreferrer"
             >
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-               
-                <span className="sr-only">Twitter</span>
-              </div>
+              <GrNotification />
             </Link>
-            <ThemeToggle />
+            <div className="px-2"></div>
+            <FcManager/>
           </nav>
         </div>
       </div>
