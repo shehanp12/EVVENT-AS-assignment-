@@ -36,14 +36,21 @@ export default function IndexPage() {
                             Dashboard
                           </h2>
                         </div>
+                        <div className="py-1"></div>
                         <div className="space-between flex items-center">
                           <TabsList>
-                            <TabsTrigger value="music" className="relative">
-                              Music
+                            <TabsTrigger
+                              style={{
+                                background: "rgb(253 164 175)",
+                                color: "rgb(76 5 25);",
+                              }}
+                              value="music"
+                              className="relative"
+                            >
+                              Overview
                             </TabsTrigger>
-                            <TabsTrigger value="podcasts">Podcasts</TabsTrigger>
-                            <TabsTrigger value="live" disabled>
-                              Live
+                            <TabsTrigger value="podcasts">
+                              Transaction List
                             </TabsTrigger>
                           </TabsList>
                           <div className="ml-auto mr-4"></div>
@@ -53,7 +60,10 @@ export default function IndexPage() {
 
                     <div className="flex items-stretch">
                       <div className="">
-                        <ServiceCard />
+                        <ServiceCard
+                          title="Active Services"
+                          serviceNumber="24"
+                        />
                       </div>
                       <div className="px-8">
                         <ServiceCard />
