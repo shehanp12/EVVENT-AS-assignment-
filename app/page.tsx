@@ -58,7 +58,7 @@ export default function IndexPage() {
                       </TabsContent>
                     </div>
 
-                    <div className="flex items-stretch">
+                    <div className="grid grid-cols-3 ">
                       <div className="">
                         <ServiceCard
                           title="Active Services"
@@ -66,10 +66,16 @@ export default function IndexPage() {
                         />
                       </div>
                       <div className="px-8">
-                        <ServiceCard />
+                      <ServiceCard
+                          title="Active Services"
+                          serviceNumber="24"
+                        />
                       </div>
                       <div className="">
-                        <ServiceCard />
+                      <ServiceCard
+                          title="Active Services"
+                          serviceNumber="24"
+                        />
                       </div>
                     </div>
                     <div className=" flex-start; ">
