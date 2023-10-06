@@ -27,7 +27,12 @@ export function ServiceCard(props: any) {
           <div className="space-y-1">
             <CardTitle>{props.title}</CardTitle>
             <div className="px-8"></div>
-            <CardDescription>{props.serviceNumber} Services</CardDescription>
+           
+            <CardDescription>
+              <p className="text-1xl font-bold text-black "
+            > <span className="text-3xl">{props.serviceNumber}</span> Services</p>
+           </CardDescription>
+           
           </div>
           <div className="ml-10">
             <DropdownMenu>
@@ -37,7 +42,7 @@ export function ServiceCard(props: any) {
                   style={{ background: "white" }}
                   className="px-2 "
                 >
-                  <ChevronRightIcon className="h-4 w-4 text-secondary-foreground" />
+                  <ChevronRightIcon className="h-4 w-4 text-secondary-foreground"  />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
@@ -65,7 +70,7 @@ export function ServiceCard(props: any) {
           <div className="flex space-x-4 text-sm text-muted-foreground">
             <div className="flex items-center">Last Month</div>
             <div className="flex items-center">
-              <StarIcon className="mr-1 h-3 w-3" />
+             <p className="font-bold text-black">15</p>
             </div>
           </div>
         </CardContent>
